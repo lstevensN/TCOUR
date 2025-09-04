@@ -1,0 +1,110 @@
+[gd_scene load_steps=5 format=3 uid="uid://oh50lcujcpph"]
+
+[ext_resource type="Script" uid="uid://5jiqk8j1aii1" path="res://Scripts/Minigames/cake_minigame.gd" id="1_e16jn"]
+[ext_resource type="Texture2D" uid="uid://bd0ffeaejc4qw" path="res://Assets/placeholder_circle_black.png" id="2_jfrrt"]
+[ext_resource type="Texture2D" uid="uid://cupguak2x32ep" path="res://Assets/placeholder_circle_white.png" id="3_5oelk"]
+[ext_resource type="Texture2D" uid="uid://chfp7sogq64b1" path="res://Assets/player_with_bowl.png" id="4_ce271"]
+
+[node name="CakeMinigame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1600.0
+offset_bottom = -900.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e16jn")
+game_started = true
+
+[node name="Canvas" type="CanvasLayer" parent="."]
+
+[node name="GameTimer" type="RichTextLabel" parent="Canvas"]
+anchors_preset = -1
+anchor_right = 0.125
+anchor_bottom = 0.111
+offset_bottom = 0.0999908
+theme_override_font_sizes/normal_font_size = 30
+text = "00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftIndicator" type="TextureRect" parent="Canvas"]
+anchors_preset = -1
+anchor_left = 0.062
+anchor_top = 0.667
+anchor_right = 0.187
+anchor_bottom = 0.889
+offset_left = 0.799995
+offset_top = -0.300049
+offset_right = 0.799988
+offset_bottom = -0.100037
+texture = ExtResource("2_jfrrt")
+expand_mode = 1
+
+[node name="RightIndicator" type="TextureRect" parent="Canvas"]
+anchors_preset = -1
+anchor_left = 0.812
+anchor_top = 0.667
+anchor_right = 0.937
+anchor_bottom = 0.889
+offset_left = 0.799927
+offset_top = -0.300049
+offset_right = 0.799927
+offset_bottom = -0.100037
+texture = ExtResource("2_jfrrt")
+expand_mode = 1
+
+[node name="GameText" type="RichTextLabel" parent="Canvas"]
+anchors_preset = -1
+anchor_left = 0.437
+anchor_top = 0.444
+anchor_right = 0.562
+anchor_bottom = 0.556
+offset_left = 0.799988
+offset_top = -249.6
+offset_right = 0.799927
+offset_bottom = -250.4
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HitText" type="RichTextLabel" parent="Canvas"]
+anchors_preset = -1
+anchor_left = 0.875
+anchor_right = 1.0
+anchor_bottom = 0.111
+offset_left = -0.00012207
+offset_bottom = 0.0999603
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BPMDisplay" type="TextureRect" parent="Canvas"]
+anchors_preset = -1
+anchor_left = 0.484
+anchor_top = 0.75
+anchor_right = 0.516
+anchor_bottom = 0.806
+offset_left = 0.599976
+offset_top = -6.10352e-05
+offset_right = 149.4
+offset_bottom = 149.6
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_5oelk")
+expand_mode = 1
+
+[node name="Player" type="TextureRect" parent="Canvas"]
+anchors_preset = -1
+anchor_left = 0.406
+anchor_top = 0.333
+anchor_right = 0.594
+anchor_bottom = 0.667
+offset_left = 0.399963
+offset_top = 0.299988
+offset_right = -0.400085
+offset_bottom = -0.300049
+pivot_offset = Vector2(150, 150)
+texture = ExtResource("4_ce271")

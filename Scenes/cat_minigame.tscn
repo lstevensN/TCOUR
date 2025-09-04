@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1w7oxm6ra3h3"]
+
+[ext_resource type="Script" uid="uid://dig5vdigo8ocm" path="res://Scripts/Minigames/cat_minigame.gd" id="1_y4u7m"]
+
+[node name="CatMinigame" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_y4u7m")
+
+[node name="Canvas" type="CanvasLayer" parent="."]
+
+[node name="LeftBar" type="ProgressBar" parent="Canvas"]
+offset_left = 200.0
+offset_top = 150.0
+offset_right = 350.0
+offset_bottom = 450.0
+fill_mode = 3
+
+[node name="MiddleBar" type="ProgressBar" parent="Canvas"]
+offset_left = 500.0
+offset_top = 150.0
+offset_right = 650.0
+offset_bottom = 450.0
+fill_mode = 3
+
+[node name="RightBar" type="ProgressBar" parent="Canvas"]
+offset_left = 800.0
+offset_top = 150.0
+offset_right = 950.0
+offset_bottom = 450.0
+fill_mode = 3

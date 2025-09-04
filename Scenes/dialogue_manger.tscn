@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://7jl7hv2i5pda"]
+
+[ext_resource type="Script" uid="uid://bw7u4qht1c0la" path="res://Scripts/dialogue_manager.gd" id="1_8mu1l"]
+
+[node name="DialogueManger" type="Control"]
+layout_mode = 3
+anchor_left = 0.11
+anchor_top = 0.617
+anchor_right = 0.89
+anchor_bottom = 0.924
+offset_left = -1.72
+offset_top = 0.18396
+offset_right = -0.280029
+offset_bottom = 1.24799
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8mu1l")
+
+[node name="Canvas" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Canvas"]
+anchors_preset = -1
+anchor_left = 0.109
+anchor_top = 0.617
+anchor_right = 0.89
+anchor_bottom = 0.926
+offset_left = -0.568008
+offset_top = 0.18396
+offset_right = -0.280029
+offset_bottom = -0.0480347
+color = Color(0, 0, 0, 1)
+
+[node name="Container" type="VBoxContainer" parent="Canvas"]
+anchors_preset = -1
+anchor_left = 0.13
+anchor_top = 0.656
+anchor_right = 0.868
+anchor_bottom = 0.887
+offset_left = 0.23999
+offset_top = -0.0880127
+offset_right = 0.0639648
+offset_bottom = 0.223999
+
+[node name="Dialogue" type="RichTextLabel" parent="Canvas/Container"]
+layout_mode = 2
+fit_content = true

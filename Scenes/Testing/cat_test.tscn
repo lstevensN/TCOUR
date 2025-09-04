@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk14me144sblw"]
+
+[ext_resource type="PackedScene" uid="uid://b1w7oxm6ra3h3" path="res://Scenes/cat_minigame.tscn" id="1_y0jg4"]
+
+[node name="CatTest" type="Node2D"]
+
+[node name="CatMinigame" parent="." instance=ExtResource("1_y0jg4")]
